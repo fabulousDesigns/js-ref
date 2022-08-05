@@ -1,5 +1,5 @@
 // ==========================
-// 1. Equality comparison
+// 1. EQUALITY OPERATOR
 // ==========================
 // Loose Equality Operator (== OR !=) performs the 
 // automatic type conversion before comparison if 
@@ -9,7 +9,7 @@ const myArr = [100];
 console.log(firstValue == 20)
 console.log([100] == 100)
 // ==========================
-// 2. strict Equality comparison
+// 2. STRICT COMPARISON OPERATOR
 // ==========================
 // checks the type and value
 // returns trus for identical values
@@ -18,7 +18,7 @@ const mySecondArr = [100];
 console.log(secondValue == 20)
 console.log([100] == 100)
 // ==========================
-// 3. Assignment operator
+// 3. ASSIGNMENT OPERATOR
 // ==========================
 const myName = "Huncho"
 console.log(myName)
@@ -38,3 +38,19 @@ const isError = 'speed' in car
 console.log(car)
 console.log(isModel)
 console.log(isError)
+// ==========================
+// 5. SPREAD OPERATOR
+// ==========================
+// add salary property to employee object
+const includeSalary = true
+const Employee = {
+    firstName: 'Bernard',
+    lastName: 'Ncho',
+    department: 'IT' 
+}
+console.log(Employee)
+if(includeSalary){
+    Employee.salary = 60000
+}
+console.log(Employee)
+
