@@ -213,4 +213,27 @@ const myFruits = ['kiwi','passion','mango','banana']
 console.log(Array.isArray(myFruits))
 const myNameMe= 'nnnnnnn'
 
-console.log(Array.isArray(myNameMe))
+// ==========================
+// 11.SOME()
+// ==========================
+const assets = [
+  {id:1, title:'v-1', type:'video'},
+  {id:2, title:'v-2', type:'video'},
+  {id:3, title:'A-1', type:'Audio'}
+]
+const hasVideoAsset = assets.some((asset) => asset.type === 'video')
+console.log(hasVideoAsset)
+// ==========================
+// 12. MAP()
+// ==========================
+const persons = [
+  {firstname : "Malcom", lastname: "Reynolds"},
+  {firstname : "Kaylee", lastname: "Frye"},
+  {firstname : "Jayne", lastname: "Cobb"}
+]
+
+persons.map((person) => {
+  const userName = person.firstname + person.lastname
+  console.log(userName)
+})
+
