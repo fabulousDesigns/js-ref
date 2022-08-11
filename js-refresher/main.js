@@ -351,3 +351,6 @@ const GREETINGS = (greetings) => {
 if (age >= 18) {
   console.log(GREETINGS?.("Hello"));
 }
+
+const AGES = [19, 29, 19, 26, 34, 45, 37, 12, 35, 47];
+console.log(AGES);
