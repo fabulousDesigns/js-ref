@@ -273,3 +273,19 @@ console.log(DANCE);
 const { 0: revesreDance, 3: odiDance } = DANCE;
 console.log(revesreDance);
 console.log(odiDance);
+
+DANCE.map((dance) => {
+  console.log(dance);
+});
+// ==========================
+// 16. SKIP VALUES IN ARRAY DESTRUCTURING
+// ==========================
+const DIGITS = [10, 100, 39, 46, 57, 67, 78];
+
+const [, , ...newDigits] = DIGITS;
+console.log(newDigits);
+
+const [, , thrid, , sixth] = DIGITS;
+
+console.log(thrid);
+console.log(sixth);
