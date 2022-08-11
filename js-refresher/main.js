@@ -241,3 +241,35 @@ persons.map((person) => {
   const userName = person.firstname + person.lastname;
   console.log(userName);
 });
+// ==========================
+// 13. NUMERIC SEPARATOR(_)
+// ==========================
+
+const largeInteger = 30_000_000;
+console.log(largeInteger === 30000000);
+// ==========================
+// 14. PASS FUNCTION ARGUEMENTS AS AN OBJECT
+// ==========================
+
+const calcArea = ({ RADIUS, PI }) => {
+  return PI * RADIUS * RADIUS;
+};
+console.log(
+  calcArea({
+    RADIUS: 14,
+    PI: 3.142,
+  })
+);
+
+console.log(calcArea({ RADIUS: 4, PI: 5 }));
+// ==========================
+// 15. OBJECT DESTRUCTURING ON ARRAYS
+// ==========================
+
+const DANCE = ["reverse", "shaku", "miondoko", "odi"];
+
+console.log(DANCE);
+
+const { 0: revesreDance, 3: odiDance } = DANCE;
+console.log(revesreDance);
+console.log(odiDance);
