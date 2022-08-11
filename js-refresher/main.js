@@ -289,3 +289,19 @@ const [, , thrid, , sixth] = DIGITS;
 
 console.log(thrid);
 console.log(sixth);
+// ==========================
+// 17. JSON.stringify() convert an object to JSON
+// ==========================
+
+const stuDents = {
+  id: 1,
+  name: "Huncho",
+};
+const dataFormat = JSON.stringify(stuDents, null, 2);
+
+console.log(dataFormat);
+// =================================
+// 18. JSON.parse()
+// =================================
+const revertStuDentsObject = JSON.parse(dataFormat);
+console.log(revertStuDentsObject);
