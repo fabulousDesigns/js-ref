@@ -337,3 +337,17 @@ const EMP = {
 };
 const EMPOBJ = EMP?.address;
 console.log(EMPOBJ);
+// ======================================
+// Optional Chaining in functional call
+// ======================================
+
+const age = 18;
+console.log(age);
+
+const GREETINGS = (greetings) => {
+  return greetings;
+};
+
+if (age >= 18) {
+  console.log(GREETINGS?.("Hello"));
+}
