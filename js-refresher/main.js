@@ -305,3 +305,35 @@ console.log(dataFormat);
 // =================================
 const revertStuDentsObject = JSON.parse(dataFormat);
 console.log(revertStuDentsObject);
+// =================================
+// 19. Filter with JSON.stringify
+// =================================
+
+const EMPLOYEE = {
+  id: 1,
+  empName: "huncho",
+  address: {
+    street: "karura",
+    box: 30006,
+    zip: "001001",
+  },
+};
+console.log(EMPLOYEE);
+const filters = ["empName", "address", "box", "zip"];
+const filterEmp = JSON.stringify(EMPLOYEE, filters);
+
+console.log(filterEmp);
+// =================================
+// 20. OPIONAL CHAINING
+// =================================
+const EMP = {
+  id: 1,
+  empName: "huncho",
+  address: {
+    street: "karura",
+    box: 30006,
+    zip: "001001",
+  },
+};
+const EMPOBJ = EMP?.address;
+console.log(EMPOBJ);
