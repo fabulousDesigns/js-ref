@@ -354,3 +354,58 @@ if (age >= 18) {
 
 const AGES = [19, 29, 19, 26, 34, 45, 37, 12, 35, 47];
 console.log(AGES);
+
+const filteredAges = AGES.filter((age) => age > 18);
+console.log(filteredAges);
+// ===========================================
+// 21. Convert to a flat array using Array.flat
+// ===========================================
+const convertToFlat = [23, 34, [56, 7], 89, 90];
+console.log(convertToFlat);
+
+const newArr = convertToFlat.flat();
+console.log(newArr);
+// ========================================
+// 22. console.time() && console.timeEnd()
+// =========================================
+let SUM = 0;
+const NUMBS = [65, 44, 12, 4];
+NUMBS.forEach(FINDSUM);
+function FINDSUM(item) {
+  SUM += item;
+}
+console.log(SUM);
+// ========================================
+// 23. console.assert()
+// ========================================
+const DETAILS = {
+  id: 12,
+  EmpName: "John matasia",
+  role: "Engineer",
+};
+
+console.assert(DETAILS.salary, "Salary Doesn't Exist");
+// ========================================
+// 24. Object.freeze()
+// =========================================
+
+const OBJ = {
+  first_name: "name",
+  last_name: "lastName",
+};
+
+console.log(OBJ);
+
+Object.freeze(OBJ);
+// throws an error
+OBJ.age = 20;
+console.log(OBJ.age);
+// ========================================
+// 25. Try & catch
+// =========================================
+try {
+  const myObj = {};
+  myObj();
+} catch (error) {
+  console.log(error);
+}

@@ -1,43 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
-<div class="container">       
-<nav>
-    <div class="logo">
-        FRUIT STORE
+  </head>
+  <body>
+    <div class="container">
+      <div class="components">
+        <div class="input__box">
+          <input
+            type="text"
+            id="limit"
+            placeholder="Enter amount you wish to borrow"
+            required
+          />
+        </div>
+        <button type="submit" id="btn" class="btn-borrow">Borrow</button>
+      </div>
     </div>
-    <div class="cart">
-        <a href="#" class="btn btn-cart">cart</a>
-    </div>
-</nav>
-<div class="jumbotron">
-    <h2>WELCOME TO THE BEST FRUIT STORE</h2>
-    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil esse a doloribus consequuntur quod assumenda facilis possimus perspiciatis tempora iusto vitae velit, voluptates, blanditiis ipsum, exercitationem necessitatibus reprehenderit hic vel!</p>
-</div>
-<div class="search-container">
-  
-        <form action="#">
-           
-            <input type="search" placeholder="person name..." id="search" name="search">
-            <button type="submit" id="submit"><i class="fa fa-search"></i></button>
-         
-          </form>
-    
-  </div>
-  <footer class="fixed_footer">
-    <div class="content">
-      <p>&copy; 2022 FABULOUS DESIGNS</p>
-    </div>
-  </footer>
-</div>
-    <script src="search.js"></script>
-</body>
+
+    <script src="main.js"></script>
+  </body>
 </html>
